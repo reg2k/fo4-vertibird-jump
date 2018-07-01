@@ -93,7 +93,7 @@
       </AdditionalLibraryDirectories>
     </Link>
     <PostBuildEvent>
-      <Command>copy /b /y "$(TargetPath)" "C:\Programs\Steam\steamapps\common\Fallout 4\Data\F4SE\Plugins\$(TargetFileName)"</Command>
+      <Command>copy /b /y "$(TargetPath)" "$(F4SE_PLUGINS)\$(TargetFileName)"</Command>
     </PostBuildEvent>
     <PostBuildEvent>
       <Message>Installing DLL...</Message>
@@ -120,7 +120,7 @@
       <ModuleDefinitionFile>exports.def</ModuleDefinitionFile>
     </Link>
     <PostBuildEvent>
-      <Command>copy /b /y "$(TargetPath)" "C:\Programs\Steam\steamapps\common\Fallout 4\Data\F4SE\Plugins\$(TargetFileName)"</Command>
+      <Command>copy /b /y "$(TargetPath)" "$(F4SE_PLUGINS)\$(TargetFileName)"</Command>
     </PostBuildEvent>
     <PostBuildEvent>
       <Message>Installing DLL...</Message>
